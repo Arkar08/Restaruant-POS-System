@@ -1,0 +1,27 @@
+export const menuLists = [
+    {
+        route:'/dashboard',
+        text:'Dashboard',
+        iconName:'dashboard.svg',
+    },
+    {
+        route:'/table',
+        text:'Table',
+        iconName:'table.svg',
+    },
+    {
+        route:'/orders',
+        text:'Orders',
+        iconName:'orders.svg',
+    },
+    {
+        route:'/foods',
+        text:'Foods',
+        iconName:'foods.svg',
+    },
+    {
+        route:'/logout',
+        text:'Logout',
+        iconName:'logout.svg',
+    }
+]

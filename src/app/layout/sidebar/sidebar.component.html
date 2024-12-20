@@ -1,0 +1,6 @@
+@for (menu of menuList; track menu) {
+    <a  [routerLink]="menu.route" routerLinkActive="active">
+        <img [src]="menu.iconName" alt="icon" class="icon">
+        {{menu.text}}
+    </a>
+}

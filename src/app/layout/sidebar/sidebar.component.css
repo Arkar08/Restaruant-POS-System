@@ -1,0 +1,18 @@
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+a{
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+.active{
+    background-color: var(--active-color);
+    color: var(--button-background-color);
+}
