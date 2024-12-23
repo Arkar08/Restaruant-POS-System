@@ -1,0 +1,81 @@
+.cards{
+    padding: 10px;
+    box-shadow: 1px 1px 3px green;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 90px;
+    display: flex;
+    background-color: white;
+    width: 90%;
+    margin: 10px 0px;
+}
+.left{
+    width: 18%;
+    background-color: aquamarine;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.right{
+    width: calc(100% - 18%);
+    padding: 10px;
+}
+p{
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: 400;
+}
+.dinner{
+    color: gray;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h3{
+    font-size: 18px !important;
+    font-weight: 500;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.iconList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.text{
+    font-size: 14px !important;
+    padding-left: 10px !important;
+}
+.payment{
+    display: flex;
+    align-items: center;
+}
+.check{
+    color: green !important;
+    margin-right: 5px;
+    font-size: 18px !important;
+    margin-top: 5px !important;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}

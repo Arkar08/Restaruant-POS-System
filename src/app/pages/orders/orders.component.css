@@ -4,13 +4,13 @@
     gap:20px;
 }
 .left{
-    width: 900px;
+    width: 70%;
     background-color: whitesmoke;
     padding: 0px 20px;
     overflow-y: auto;
 }
 .right{
-    width: 400px;
+    width: 30%;
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 10px;
@@ -22,6 +22,7 @@ h3{
 .middle{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .filter{
     padding: 5px;
@@ -30,7 +31,6 @@ h3{
     align-items: center;
     border-radius: 30px;
     justify-content: space-between;
-    margin-right: 10px;
 }
 p{
     padding: 0px !important;

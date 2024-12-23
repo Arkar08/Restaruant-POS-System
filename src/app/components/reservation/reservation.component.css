@@ -1,0 +1,86 @@
+.main{
+    padding: 10px;
+    position: relative;
+    height: 100%;
+    background-color: white;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    gap: 10px;
+}
+.filter{
+    padding: 5px;
+    border:1px solid var(--button-background-color);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+p{
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-right: 10px !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+span{
+    width: 25px;
+    height: 25px;
+    background-color: var(--button-background-color);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px !important;
+    color: white;
+}
+.headerDate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+mat-form-field{
+    width: 100%;
+    position: relative;
+}
+input{
+    padding: 0px 30px;
+}
+.searchIcon{
+    position: absolute;
+    left: 0%;
+}
+.tableCard{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 10px;
+    height: 420px;
+}
+.footer{
+    background-color: white !important;
+    position: absolute;
+    bottom: 4%;
+    width: 90%;
+}
+.reservation{
+    width: 100% !important;
+    background-color: green !important;
+    color: white !important;
+}
+.box{
+    color: white !important;
+    margin-right: 10px;
+}
