@@ -1,0 +1,70 @@
+.main{
+    padding: 10px;
+    height: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle{
+    display: flex;
+    gap: 10px;
+}
+.dine{
+    padding: 10px !important;
+    margin: 0px !important;
+    margin-right: 10px !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    text-wrap: nowrap;
+    background-color:green !important;
+    color: white !important;
+    border-radius: 10px;
+    border:1px solid rgba(55, 55, 55, 0.316);
+    width: 80px;
+    text-align: center;
+}
+p:nth-child(2){
+    background-color: white !important;
+    color: black !important;
+}
+p:nth-child(3){
+    background-color: white !important;
+    color: black !important;
+}
+h3{
+    font-size: 24px !important;
+    font-weight: 500;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.avaliable{
+    display: flex;
+    gap: 20px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.back{
+    background-color: blue !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.reserved{
+    background-color: green !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.onDine{
+    background-color: red !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
