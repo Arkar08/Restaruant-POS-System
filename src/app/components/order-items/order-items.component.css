@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main{
+    padding: 5px;
+}
+h3{
+    font-size: 18px !important;
+    font-weight: 500;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+p{
+    font-size: 14px !important;
+    font-weight: 400;
+    margin: 0px !important;
+    padding: 0px !important;
+    color: gray;
+}
+.product{
+    display: flex;
+}
+.products{
+    margin-right: 10px !important;
+}
+.lists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.itemList{
+    height: 110px;
+    overflow-y: auto;
+    margin-top: 10px;
+}

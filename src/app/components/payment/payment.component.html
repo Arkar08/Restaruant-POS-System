@@ -1,1 +1,40 @@
-<p>payment works!</p>
+<div class="main">
+    <div class="header">
+        <div class="tableHeader">
+            <h3>Table No #04</h3>
+            <div class="icon">
+                <mat-icon>edit</mat-icon>
+                <mat-icon>delete</mat-icon>
+            </div>
+        </div>
+        <div class="people">
+            <p>Order #F0030</p>
+            <p>2 <span>people</span></p>
+        </div>
+    </div>
+    <div class="item">
+        <app-order-items></app-order-items>
+    </div>
+    <div class="summary">
+        <app-payment-summary></app-payment-summary>
+    </div>
+    <div class="type">
+        <app-payment-type></app-payment-type>
+    </div>
+    <div class="atm">
+        <img src="atm-card.jpg" alt="atm-card" class="atmImage">
+    </div>
+    <!-- <div class="qrcode">
+        <img src="qrcode.png" alt="qrcode" class="atmImage">
+    </div> -->
+    <div class="actions">
+        <button mat-raised-button class="print"> 
+            <mat-icon class="mouse">print</mat-icon>
+            Print
+        </button>
+        <button mat-raised-button class="place">
+            <mat-icon class="mouse">mouse</mat-icon>
+            Place Order
+        </button>
+    </div>
+</div>

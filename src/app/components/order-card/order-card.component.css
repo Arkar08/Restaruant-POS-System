@@ -1,0 +1,58 @@
+mat-card{
+    width: 100% !important;
+    margin-bottom: 10px !important;
+}
+
+
+.image{
+    width: 100%;
+}
+p{
+    padding: 5px !important;
+    margin:5px !important;
+    font-size: 12px !important;
+    color: gray !important;
+}
+.money{
+    color: black !important;
+}
+h5{
+    padding: 5px !important;
+    margin:5px !important;
+    font-size: 14px !important;
+}
+.footerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-size: 18px !important;
+    text-align: center;
+    color: white !important;
+    cursor: pointer;
+}
+.button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 10px;
+}
+.button:nth-child(1){
+    background-color: red;
+}
+.button:nth-child(3){
+    background-color: green;
+}
+h3{
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: 400;
+}  
