@@ -54,11 +54,12 @@ span{
 }
 .cardheader{
     min-width: 235px;
-    width: 100%;
     padding: 10px !important;
     box-shadow: 1px 1px 1px black;
     border: 1px solid gray;
     border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 h4{
     padding: 0px !important;
@@ -82,14 +83,7 @@ h4{
     color: white;
     box-shadow: 1px 1px 1px red;
 }
-.card{
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    overflow-x: scroll;
-    scrollbar-width: thin;
-    position: relative;
-}
+
 .cardContent{
     display: flex;
     align-items: center;
@@ -102,27 +96,63 @@ h4{
     align-items: center;
     justify-content: space-between;
 }
-.actions{
-    position: absolute;
-    top: 30%;
-    right: 0%;
-}
-.action{
-    position: absolute;
-    top: 30%;
-    left: 0%;
-}
-button{
-    background-color: gray !important;
-}
-mat-icon{
-    color: white !important;
-}
+
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .card-container {
+    display: flex; 
+    transition: transform 0.5s ease-out;
+    gap: 20px; 
+  }
+  
+  .cardheader h3 {
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .actions {
+    left: 0px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .action {
+    right: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 .cards{
     display: flex;
     align-items: center;

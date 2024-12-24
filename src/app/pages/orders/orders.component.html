@@ -2,156 +2,57 @@
     <div class="left">
         <h3>Order Line</h3>
        <div class="middle">
-        <div class="filter">
-            <p>All</p>
-            <span>30</span>
-        </div>
-        <div class="filter">
-            <p>DineIn</p>
-            <span>30</span>
-        </div>
-        <div class="filter">
-            <p>WaitList</p>
-            <span>30</span>
-        </div>
-        <div class="filter">
-            <p>TakeAway</p>
-            <span>30</span>
-        </div>
-        <div class="filter">
-            <p>Served</p>
-            <span>30</span>
-        </div>
+            <div class="filter">
+                <p>All</p>
+                <span>30</span>
+            </div>
+            <div class="filter">
+                <p>DineIn</p>
+                <span>30</span>
+            </div>
+            <div class="filter">
+                <p>WaitList</p>
+                <span>30</span>
+            </div>
+            <div class="filter">
+                <p>TakeAway</p>
+                <span>30</span>
+            </div>
+            <div class="filter">
+                <p>Served</p>
+                <span>30</span>
+            </div>
        </div>
        <div class="card">
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
+        <div class="card-container" [style.transform]="'translateX(' + (-currentIndex * 30) + '%)'">
+          <div *ngFor="let fruit of fruits; let i = index" class="cardheader">
+            <div class="cardContent">
+                <h4>Order #F0027</h4>
+                <p class="table">Table 03</p>
             </div>
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
+            <div class="cardContent">
+                <h4>Item : 8x</h4>
             </div>
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
+            <div class="cardFooter">
+                <h4>2 mins ago</h4>
+                <p class="status">in Kitchen</p>
             </div>
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
-            </div>
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
-            </div>
-             <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
-            </div>
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
-            </div>
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
-            </div>
-            <div class="cardheader">
-                <div class="cardContent">
-                    <h4>Order #F0027</h4>
-                    <p class="table">Table 03</p>
-                </div>
-                <div class="cardContent">
-                    <h4>Item : 8x</h4>
-                </div>
-                <div class="cardFooter">
-                    <h4>2 mins ago</h4>
-                    <p class="status">in Kitchen</p>
-                </div>
-            </div>
-            <div class="actions">
-                <button mat-icon-button>
-                    <mat-icon>chevron_right</mat-icon>
-                </button>
-            </div>
-            <div class="action">
-                <button mat-icon-button>
-                    <mat-icon>chevron_left</mat-icon>
-                </button>
-            </div>
-       </div>
+          </div>
+        </div>
+      
+        <div class="actions" [hidden]="currentIndex === 0">
+          <button mat-icon-button (click)="clickIndex(-1)">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+        </div>
+      
+        <div class="action" [hidden]="currentIndex === fruits.length-1">
+          <button mat-icon-button (click)="clickIndex(1)">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </div>
+      </div>
+      
         <div class="menu">
             <h3>Foodies Menu</h3>
             <div>
