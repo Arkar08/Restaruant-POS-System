@@ -1,0 +1,15 @@
+.main{
+    width: 100%;
+    height: calc(100vh - 80px);
+    gap:20px;
+    display: flex;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.right{
+    width: 70%;
+    height: 100%;
+}

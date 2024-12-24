@@ -60,7 +60,7 @@ input{
 }
 .searchIcon{
     position: absolute;
-    left: 0%;
+    color: gray !important;
 }
 .tableCard{
     display: flex;
