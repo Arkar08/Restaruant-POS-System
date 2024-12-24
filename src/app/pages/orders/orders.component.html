@@ -40,14 +40,14 @@
           </div>
         </div>
       
-        <div class="actions" [hidden]="currentIndex === 0">
-          <button mat-icon-button (click)="clickIndex(-1)">
+        <div class="actions" [hidden]="currentIndex === 0" >
+          <button mat-icon-button (click)="clickIndex(-1)" class="btn">
             <mat-icon>chevron_left</mat-icon>
           </button>
         </div>
       
         <div class="action" [hidden]="currentIndex === fruits.length-1">
-          <button mat-icon-button (click)="clickIndex(1)">
+          <button mat-icon-button (click)="clickIndex(1)" class="btn">
             <mat-icon>chevron_right</mat-icon>
           </button>
         </div>
@@ -56,79 +56,23 @@
         <div class="menu">
             <h3>Foodies Menu</h3>
             <div>
-                <mat-icon class='iconLeft'>chevron_left</mat-icon>
-                <mat-icon class='iconLeft'>chevron_right</mat-icon>
+                <button mat-icon-button (click)="handleClick(-1)" [disabled]="itemIndex === 0">
+                    <mat-icon class='iconLeft'>chevron_left</mat-icon>
+                </button>
+                <button mat-icon-button (click)="handleClick(1)" [disabled]="itemIndex === fruits.length - 3">
+                    <mat-icon class='iconLeft' >chevron_right</mat-icon>
+                </button>
             </div>
         </div>
+
         <div class="cards">
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-                </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
-                </div>
-            </div>
-            <div class="cardsHeader">
-                <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
-                <div>
-                    <h3 class="menuText">All Menu</h3>
-                    <p class="menuParagraph">154 Items</p>
+            <div class="card-container" [style.transform]="'translateX(' + (-itemIndex * 10) + '%)'">
+                <div class="cardsHeader" *ngFor="let fruit of fruits ;let i = index;">
+                    <img src="rice-bowl.jpg" alt="menuItem" class="menuImage">
+                    <div>
+                        <h3 class="menuText">{{fruit}}</h3>
+                        <p class="menuParagraph">154 Items</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -19,6 +19,7 @@ export class OrdersComponent implements OnInit {
         
     }
     currentIndex:number = 0;
+    itemIndex:number = 0;
     clickIndex(step:any){
       const totalslide = this.fruits.length;
       this.currentIndex += step;
@@ -27,5 +28,15 @@ export class OrdersComponent implements OnInit {
       } else if (this.currentIndex >= totalslide) {
         this.currentIndex = 0; 
       }      
+    }
+
+    handleClick(item:any){
+      const total = this.fruits.length;
+      this.itemIndex += item;
+      if(this.itemIndex < 0){
+        this.itemIndex = total - 1
+      }else if(this.itemIndex >= total){
+        this.itemIndex = 0;
+      }
     }
 }
