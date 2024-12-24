@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { PaymentComponent } from "../../components/payment/payment.component";
 import {MatCardModule} from '@angular/material/card'
@@ -5,6 +6,8 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon'
 import { OrderCardComponent } from "../../components/order-card/order-card.component";
 import { NgFor } from '@angular/common';
+import { ApiService } from '../../service/api.service';
+
 
 @Component({
   selector: 'app-orders',
@@ -14,9 +17,9 @@ import { NgFor } from '@angular/common';
 })
 export class OrdersComponent implements OnInit {
   fruits = ["Apple", "Banana", "Orange", "Grape", "Mango",'arkar','mama','mgmg'];
-    constructor(){}
+    constructor(private service:ApiService){}
     ngOnInit(): void {
-        
+        this.getData()
     }
     currentIndex:number = 0;
     itemIndex:number = 0;
@@ -38,5 +41,13 @@ export class OrdersComponent implements OnInit {
       }else if(this.itemIndex >= total){
         this.itemIndex = 0;
       }
+    }
+
+    getData(){
+      this.service.getData().subscribe((res:any)=>{
+        console.log(res)
+      },error=>{
+        console.log(error)
+      })
     }
 }
