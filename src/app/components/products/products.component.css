@@ -45,6 +45,7 @@ input{
 .footer{
     height: 500px;
     overflow: auto;
+    scrollbar-width: thin;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 10px;

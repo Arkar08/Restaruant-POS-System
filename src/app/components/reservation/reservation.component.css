@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     overflow-y: auto;
+    scrollbar-width: thin;
     gap: 10px;
 }
 .filter{
@@ -66,6 +67,7 @@ input{
     display: flex;
     flex-direction: column;
     overflow: auto;
+    scrollbar-width: thin;
     gap: 10px;
     height: 420px;
 }

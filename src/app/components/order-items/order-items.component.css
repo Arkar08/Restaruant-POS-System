@@ -34,5 +34,6 @@ p{
 .itemList{
     height: 110px;
     overflow-y: auto;
+    scrollbar-width: thin;
     margin-top: 10px;
 }

@@ -23,6 +23,7 @@ p{
     gap: 10px;
     height: 500px;
     overflow: auto;
+    scrollbar-width: thin;
 }
 .image{
     width: 40px;
