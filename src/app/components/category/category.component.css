@@ -52,7 +52,7 @@ span{
     width: 80%;
     padding: 10px 20px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
     cursor: pointer;
 }
 .imageContainer{
